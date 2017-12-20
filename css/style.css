@@ -1,0 +1,557 @@
+@font-face {
+	font-family:"MullerBold";
+	src: url(../fonts/MullerBold.otf);
+}
+@font-face {
+	font-family:"HelveticaNeueCyr";
+	src: url(../fonts/HelveticaNeueCyr-Medium.otf);
+}
+@font-face {
+	font-family:"MullerBlack";
+	src: url(../fonts/Mullerblack.otf);
+}
+@font-face {
+	font-family:"MullerRegular";
+	src: url(../fonts/MullerRegular.ttf);
+}
+@font-face {
+	font-family:"PaxomiaNovaBlack";
+	src: url(../fonts/ProximaNova-Black.ttf);
+}
+@font-face {
+	font-family:"HelveticaNeueCyrR";
+	src: url(../fonts/HelveticaNeueCyr-Roman.otf);
+}
+@font-face {
+	font-family:"GothavProLight";
+	src: url(../fonts/GothaProLig.otf);
+}
+@font-face {
+	font-family:"MullerBoldDemo";
+	src: url(../fonts/MullerExtraBoldDEMO.otf);
+}
+@font-face {
+	font-family:"MyriadPro";
+	src: url(../fonts/MyriadPro-Regular.otf);
+}
+@font-face {
+	font-family:"PaxomiaNova";
+	src: url(../fonts/ProximaNova-Regular.ttf);	
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	margin: 0 auto;
+	width: 80%;
+	max-width: 1141px;
+}
+header {
+	background: url(../image/header.png) no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+	height: 750px;
+}
+header::before {
+	content: "";
+	width: 100%;
+	height: 750px;
+	position: absolute;
+	background: url(../image/shadow-header.png) no-repeat;
+	background-size: cover;
+	z-index: 0;
+}
+
+header .container{
+	position: relative;
+	z-index: 1;
+}
+
+header .container .wrap {
+	padding-top: 51px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-logo {
+	display: flex;
+}
+
+.header-logo .title {
+	font-family: "HelveticaNeueCyr", Arial, sans-serif;
+	font-size: 21px;
+	font-weight: bold;
+	color: #fff;
+	padding-right: 27px;
+}
+.header-logo .text {
+	font-family: "PaxomiaNova", Arial, sans-serif;
+	font-size: 12px;
+	color: #e9e9e9;
+}
+.header-air {
+	display: flex;
+	justify-content: center;
+	align-self: flex-start;
+}
+.header-air .title {
+	font-family: "PaxomiaNova", Arial, sans-serif;
+	color: #e8e8e8;
+	padding-left: 22px;
+	font-size: 12px;
+}
+.header-call {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	align-items: right
+	font-family: "HelveticaNeueCyrR";
+}
+
+.header-call .phone {
+	font-size: 19px;
+	color: #fff;
+}
+.header-call .call {
+	color: #bfbfbf;
+	font-size: 14px;
+	margin-top: 7px;
+	position: relative;
+}
+.header-call .call::before {
+	content: "";
+	width: 113px;
+	top: 18px;
+	position: absolute;
+	border-bottom: 1px solid #0097fb;
+}
+.blue {
+	color: #0097fb;
+}
+
+
+
+.wrapper-middle {
+	margin-top: 130px;
+}
+
+.wrapper-middle .title {
+	font-family: "PaxomiaNova", Arial, sans-serif;
+	letter-spacing: 10px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.wrapper-middle h1 {
+	margin-top: 35px;
+	margin-bottom: 55px;
+	font-family: "MullerBoldDemo";
+	text-transform: uppercase;
+	color:#fff;
+	position: relative;
+}
+.slogan {
+	display: flex;
+}
+.count p {
+	font-family: "MyriadPro", Arial, sans-serif;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	text-align: left;
+}
+
+.time {
+	font-family: "PaxomiaNova", Arial, sans-serif;
+	color: #fff;
+	font-size: 17px;
+	position: absolute;
+	top: 65px;
+	left: 175px;
+	-moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg); 
+    -o-transform: rotate(-90deg); 
+    transform: rotate(-90deg);
+}
+.slogan .text{
+	color: #eeeeee;
+	margin-bottom: 58px;
+	font-size: 15px;
+	font-family: "PaxomiaNova", Arial, sans-serif;
+}
+
+.ten {
+	font-size: 150px;
+	font-family: "GothavProLight", Arial, sans-serif;
+
+}
+
+
+
+.advantages .container{
+	position: relative;
+}
+.advantages .container .wrapper {
+	display: flex;
+	position: absolute;
+	background: #fff;
+	height: 210px;
+	top: -62px;
+	z-index: 2;
+	width: 100%;
+	-webkit-box-shadow: 0px 4px 26px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow:    0px 4px 26px 0px rgba(0, 0, 0, 0.2);
+	box-shadow:         0px 4px 26px 0px rgba(0, 0, 0, 0.2);
+	justify-content: space-around;
+}
+.advantages .description {
+	padding-left: 15px;
+	padding-top: 10px;
+}
+
+.old, .clip-text, .ten{
+	-webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url(../image/bgcolor.png);
+}
+
+.old {
+	font-family: "PaxomiaNovaBlack", Arial, sans-serif;
+	font-size: 25px;
+}
+
+.plus, .desc {
+	font-family: "HelveticaNeueCyr", Arial, sans-serif;
+
+}
+
+.plus {
+	color: #4283b6;
+	font-size: 14px;
+}
+
+.desc {
+	padding-top: 15px;
+	color: #636f7a;
+	font-size: 13px;
+
+}
+.item .clip-text {
+	font-size: 70px;
+    text-align: center;
+    color: #fff;
+	font-family: "MullerBlack", Arial, sans-serif;
+}
+#show {
+	overflow: hidden;
+	padding-bottom: 200px;
+}
+
+#show .container {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top:300px;
+}
+
+.show-text {
+	width: 45%;
+	padding-right: 80px;
+	padding-top: 50px;
+	position: relative;
+}
+
+.show-text h2{
+	font-family: "HelveticaNeueCyr", Arial, sans-serif;
+	font-size: 30px;
+	text-align: left;
+}
+.section{
+	position: absolute;
+	-moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg); 
+    -o-transform: rotate(-90deg); 
+    transform: rotate(-90deg);
+    top: 100px;
+    left: -83px;
+    color: #cdcdcd;
+	font-family: "MullerBold", Arial, sans-serif;
+	font-size: 13px;
+	text-align: left;
+}
+
+.show-text .text {	
+	padding-top: 23px;
+	font-family: "MullerRegular", Arial, sans-serif;
+	font-size: 14px;
+	color: #636f7a;
+}
+
+.show-text .arrow {
+	width: 40px;
+	background: #0097fb;
+	margin: 48px 0;
+	height: 3px;
+	border: none;
+}
+
+.show-text .desc {
+	font-family: "PaxomiaNova", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	padding-bottom: 50px;
+}
+
+
+.elem {
+	display: flex;
+	margin-right: 25px;
+	position: relative;
+
+}
+
+.elem:nth-child(2) {
+	margin-left:25px;
+	opacity: 0.2;
+}
+
+.slider {
+	width: 40%;
+	display: flex;
+}
+.slider img {
+	position: relative;
+}
+
+.fa-search {
+	font-size: 200px;
+}
+
+.search {
+	opacity: 0;
+	transition: 1s;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 50px!important;
+	color:#fff;
+}
+.active {
+	border-radius: 50%;
+  	background-color: rgb(0, 151, 251);
+  	box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.16);
+	color: #fff!important;
+	-webkit-box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.16);
+	-moz-box-shadow:    0px 3px 12px 0px rgba(0, 0, 0, 0.16);
+	box-shadow:         0px 3px 12px 0px rgba(0, 0, 0, 0.16);
+}
+.btn {
+	font-family: "HelveticaNeueCyr", Arial, sans-serif;
+	color: #fff;
+	border-radius: 40px;
+	background: #0097fb;
+	font-size: 12px;
+	text-transform: uppercase;
+	-webkit-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.42);
+	-moz-box-shadow:    0px 5px 4px 0px rgba(0, 0, 0, 0.42);
+	box-shadow:         0px 5px 4px 0px rgba(0, 0, 0, 0.42);
+}
+
+.pag {
+	font-family: "PaxomiaNova", Arial, sans-serif;
+	margin-right:15px;
+	padding: 15px;
+	width: 21px;
+	height: 21px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #b4bbc2;
+}
+
+@media (min-width: 768px) {
+	.count {
+		padding-left: 73px;
+		position: relative;
+	}
+	.wrapper .item {
+		display: flex;
+		padding: 50px 0;
+	}
+	.btn {
+		padding: 15px 10px;
+}
+	.pagination {
+		padding-top: 35px;
+		width: 100%;
+		display: flex;
+		margin-left: 45%;
+}
+	.elem:hover .search{
+		opacity: 1;
+}
+
+}
+
+
+@media (min-width:320px) and (max-width: 767px){
+.container {
+	width: 90%;
+}
+header .container .wrap {
+	padding-top: 21px;
+	display: flex;
+	flex-direction: column;
+}
+.header-logo, .header-air, .header-call {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 10px 0;
+}
+.wrapper-middle {
+	font-size: 16px;
+	margin-top: 70px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.wrapper-middle .title {
+	letter-spacing: 10px;
+
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 0.5em;
+}
+
+.wrapper-middle h1 {
+	margin-top: 15px;
+	margin-bottom: 25px;
+	font-size: 1em;
+	position: relative;
+}
+.slogan {
+	display: flex;
+	flex-direction: column;
+}
+.count {
+	font-size: 16px;
+	position: relative;
+}
+.count p {
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	text-align: left;
+}
+
+.time {
+	color: #fff;
+	font-size: 0.9em;
+	position: absolute;
+	top: 55px;
+	left: 200px;
+}
+.slogan .text{
+	margin-bottom: 58px;
+	font-size: 15px;
+}
+
+.ten {
+	font-size: 6em;
+	display: flex;
+	justify-content: center;
+}
+
+.header-btn img {
+	max-width: 100%;
+}
+.advantages .container .wrapper {
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	background: #fff;
+	height: 450px;
+	top: -22px;
+	z-index: 2;
+}
+.wrapper .item {
+	display: flex;
+	width: 50%;
+	flex-direction: row;
+	align-self: center;
+	align-items: center;
+}
+#show .container {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top:500px;
+}
+
+.show-text {
+	width: 100%;
+	position: relative;
+}
+
+.show-text h2{
+	font-size: 20px;
+	text-align: left;
+}
+.section{
+	position: absolute;
+    top: 100px;
+    left: -50px;
+    color: #cdcdcd;
+	font-size: 10px;
+}
+
+.show-text .text {	
+	padding-top: 23px;
+	font-size: 14px;
+	color: #636f7a;
+}
+
+.show-text .arrow {
+	width: 40px;
+	background: #0097fb;
+	margin: 48px 0;
+	height: 3px;
+	border: none;
+}
+
+.show-text .desc {
+	font-size: 14px;
+	line-height: 1.5;
+	padding-bottom: 50px;
+}
+
+.btn {
+	padding: 10px 15px;
+}
+
+.elem {
+	margin-top: 80px;
+	display: flex;
+	width: 100%;
+	height:150px;
+	position: relative;
+}
+.elem img {
+	min-width: 100%;
+}
+.pagination {
+	padding-top: 35px;
+	width: 100%;
+	display: flex;
+}
+}
